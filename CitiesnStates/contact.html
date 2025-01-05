@@ -12,32 +12,35 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="capital.html">Capital City</a></li>
-                <li><a href="city1.html">City 1</a></li>
-                <li><a href="city2.html">City 2</a></li>
+                <li><a href="capital.html">Frankfort</a></li>
+                <li><a href="city2.html">Lexington</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <h2>We'd love to hear from you!</h2>
         <form>
             <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName"><br>
+            <input type="text" id="firstName" name="firstName" required><br>
+
             <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName" name="lastName"><br>
+            <input type="text" id="lastName" name="lastName" required><br>
+
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email"><br>
+            <input type="email" id="email" name="email" required><br>
+
             <label for="confirmEmail">Confirm Email:</label>
-            <input type="email" id="confirmEmail" name="confirmEmail"><br>
-            <label for="question">Question:</label>
+            <input type="email" id="confirmEmail" name="confirmEmail" required><br>
+
+            <label for="question">Your Question:</label>
             <textarea id="question" name="question"></textarea><br>
-            <button type="button" onclick="validateForm()">Submit</button>
+
+            <button type="submit">Submit</button>
         </form>
     </main>
     <footer>
-        <p>&copy; 2025 [State Government]</p>
+        <p>&copy; Done by Jaden R.</p>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
-
