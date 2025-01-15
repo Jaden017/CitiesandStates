@@ -1,9 +1,9 @@
-document.getElementById("contact-form").addEventListener("submit", function(event) {
-    const email = document.getElementById("email").value;
-    const confirmEmail = document.getElementById("confirm-email").value;
-
-    if (email !== confirmEmail) {
-        event.preventDefault();
-        alert("The email addresses do not match. Please try again.");
+function validateEmail() {
+    const email1 = document.getElementById('email');
+    const email2 = document.getElementById('confirmEmail');
+    if (email1.value !== email2.value) {
+        alert("Emails do not match!");
+        return false;
     }
-});
+    return true;
+}
