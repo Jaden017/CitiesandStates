@@ -9,12 +9,13 @@
 <body>
     <header>
         <h1>Welcome to the Kentucky State Information Website</h1>
+        <p>Your go-to resource for exploring Kentucky's rich history, culture, and vibrant cities.</p>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="capital.html">Frankfort</a></li>
-                <li><a href="city2.html">Lexington</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="index.html" aria-label="Home Page">Home</a></li>
+                <li><a href="capital.html" aria-label="Capital City Page">Frankfort</a></li>
+                <li><a href="city2.html" aria-label="Lexington City Page">Lexington</a></li>
+                <li><a href="contact.html" aria-label="Contact Us Page">Contact Us</a></li>
             </ul>
         </nav>
     </header>
@@ -22,11 +23,15 @@
         <section>
             <h2>Explore Kentucky</h2>
             <p>Discover the charm and rich history of Kentucky's cities, starting with the capital, Frankfort, and the vibrant city of Lexington.</p>
-            <img src="images/kentucky.jpg" alt="Kentucky">
+            <img src="images/kentucky.jpg" alt="Scenic view of Kentucky with rolling hills and a clear sky">
         </section>
     </main>
     <footer>
-        <p>&copy; Done by Jaden R.</p>
+        <p>&copy; <span id="year"></span> Done by Jaden R.</p>
     </footer>
+    <script>
+        // Set the current year dynamically
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
